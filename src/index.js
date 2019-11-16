@@ -1,28 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const Todolist = () => {
-    const items = ['learn React', 'Build Awesome App'];
-    return (
-        <ul>
-            <li>{items[0]}</li>
-            <li>{items[1]}</li>
-        </ul>
-    );
-};
-const AppHeader = () => {
-    return <h1>My Todo list</h1>;
-};
-const SearchBar = () => {
-    return <input placeholder="search" />;
-};
+import AppHeader from './components/app-header';
+import TodoList from './components/todo-list';
+import SearchBar from './components/search-bar';
+
+
 const App = () => {
+    
     return (
         <div>
-            <span>{(new Date()).toString()}</span>
             <AppHeader />
             <SearchBar />
-            <Todolist />
+            <TodoList />
         </div>
     );
 };
