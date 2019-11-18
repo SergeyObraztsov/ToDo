@@ -1,0 +1,8 @@
+.add-item-form {
+    margin-top: 10px;
+}
+
+.add-item-form button {
+    white-space:nowrap;
+    margin-left: 3px;
+}
